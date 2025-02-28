@@ -9,12 +9,12 @@ import "./styles/style.css";
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
+            <BrowserRouter basename="/react-image-website">
                 <Routes>
                     <Route path="/" element={<Layout />}>
-                        <Route index element={<Homepage />}></Route>
-                        <Route path="About" element={<About />}></Route>
-                        <Route path="*" element={<Page404 />}></Route>
+                        <Route index element={<Homepage />} />
+                        <Route path="About" element={<About />} />
+                        <Route path="*" element={<Page404 />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
