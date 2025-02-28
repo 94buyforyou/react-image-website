@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 export const Layout = () => {
     return (
         <div>
-            <h1>這是 Layout</h1>
+            <h1>React練習</h1>
             <nav>
                 <ul>
                     <li>
