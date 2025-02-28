@@ -1,23 +1,24 @@
 import { Outlet, Link } from "react-router-dom";
+import React from "react";
+import Footer from "./components/Footer";
 
 export const Layout = () => {
     return (
         <div>
-            {" "}
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">首頁</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">關於這個網站</Link>
-                        </li>
-                    </ul>
-                </nav>
+            <h1>這是 Layout</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/">首頁</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">關於這個網站</Link>
+                    </li>
+                </ul>
+            </nav>
 
-                <Outlet />
-            </div>
+            <Outlet />
+            <Footer />
         </div>
     );
 };
