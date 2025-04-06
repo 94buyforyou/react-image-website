@@ -1,16 +1,24 @@
 .search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
 
-  input,
-  button {
-    font-size: 2rem;
-    padding: 0.25rem;
-    border: 3px solid rgb(186, 252, 181);
-  }
-  button {
-    background-color: rgb(186, 252, 181);
-  }
+    input,
+    button {
+        font-size: 2rem;
+        padding: 0.25rem;
+        border: 3px solid rgb(186, 252, 181);
+
+        @media (max-width: 768px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 1.3rem;
+        }
+    }
+    button {
+        background-color: rgb(186, 252, 181);
+    }
 }
